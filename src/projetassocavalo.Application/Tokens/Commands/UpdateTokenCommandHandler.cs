@@ -14,7 +14,7 @@ public class UpdateTokenCommandHandler : IUpdateTokenCommandHandler
 
     public async Task<Unit> Handle(UpdateTokenCommand request, CancellationToken cancellationToken)
     {
-       await _tokenRepository.updateToken(request.token, request.refreshToken);
+       await _tokenRepository.UpdateToken(request.token, request.refreshToken);
        return Unit.Value;
     }
 }

@@ -1,11 +1,16 @@
 src/projetassocavalo.Api/bin/
 src/projetassocavalo.Api/obj/
+src/projetassocavalo.Api/Properties/
 src/projetassocavalo.Test/bin/
 src/projetassocavalo.Test/obj/
+src/projetassocavalo.Test/Properties/
 src/projetassocavalo.Api/appsettings.Development.json
 src/projetassocavalo.Application/bin/
 src/projetassocavalo.Application/obj/
+src/projetassocavalo.Application/Properties/
 src/projetassocavalo.Domain/bin/
 src/projetassocavalo.Domain/obj/
+src/projetassocavalo.Domain/Properties/
 src/projetassocavalo.Infrastructure/bin/
 src/projetassocavalo.Infrastructure/obj/
+src/projetassocavalo.Infrastructure/Properties/

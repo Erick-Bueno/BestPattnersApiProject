@@ -29,7 +29,7 @@ public class TokenRepository : ITokenRepository
         return token;
     }
 
-    public async Task<Token> updateToken(Token token, string refreshToken)
+    public async Task<Token> UpdateToken(Token token, string refreshToken)
     {
         var updatedToken =  Token.UpdateToken(token, refreshToken);
         await _appDbContext.SaveChangesAsync();

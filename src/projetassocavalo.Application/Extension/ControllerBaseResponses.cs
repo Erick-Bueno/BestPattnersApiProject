@@ -40,7 +40,7 @@ public static class ControllerBaseResponses
             {
                 if (error.ErrorType == TypeError.Conflict.ToString())
                 {
-                    return controller.Conflict(error);
+                    return controller.Problem(statusCode: StatusCodes.Status409Conflict, title: error.detail);
                 }
                 if (error.ErrorType == TypeError.ValidationError.ToString())
                 {

@@ -13,7 +13,7 @@ public class RegisterCommandValidator : AbstractValidator<RegisterCommand>
         .Matches(@"^[^@\s]+@[^@\s]+\.[^@\s]+$").WithMessage("Invalid Email");
         RuleFor(l => l.Password)
         .NotEmpty()
-        .Matches(@"^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$").WithMessage("The password must contain at least 8 characters, a stored letter, a number and a special character");
+        .Matches(@"(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[-_@#$%]).{8,}").WithMessage("The password must contain at least 8 characters, a stored letter, a number and a special character");
         RuleFor(r => r.UserName)
         .NotEmpty();
     }
